@@ -34,7 +34,7 @@
                 <Entry Grid.Row="2" Grid.Column="1" x:Name="txtPagoinicial" Keyboard="Numeric" MaxLength="4" TextChanged="txtPagoinicial_TextChanged"/>
 
                 <BoxView Grid.Row="3" Grid.Column="0" Color="Blue"/>
-                <Label  Grid.Row="3" Grid.Column="0" Text="Ingrese el Pago Mensual: " TextColor="White"  HorizontalTextAlignment="End"/>
+                <Label  Grid.Row="3" Grid.Column="0" Text="Ingrese El Pago Mensual: " TextColor="White"  HorizontalTextAlignment="End"/>
                 <Entry Grid.Row="3" Grid.Column="1" x:Name="txtPagomensual" Keyboard="Numeric" MaxLength="4" TextChanged="txtPagomensual_TextChanged"/>
 
                 <Label Grid.Row="4" Grid.Column="0" Text="supago es:" x:Name="txtTotal" TextColor="Black"  HorizontalTextAlignment="Center"/>
