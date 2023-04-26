@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauroAvila_examen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                
+                <Label Grid.Row="0" Grid.Column="0" x:Name="lblUsuario" TextColor="Gray"  HorizontalTextAlignment="Center"/>
+
+                <BoxView Grid.Row="1" Grid.Column="0" Color="Blue"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Ingrese el nombre: " TextColor="White"  HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtNombre"/>
+
+                <BoxView Grid.Row="2" Grid.Column="0" Color="Blue"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Ingrese el Pago inicial: " TextColor="White"  HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtPagoinicial" Keyboard="Numeric" MaxLength="4" TextChanged="txtPagoinicial_TextChanged"/>
+
+                <BoxView Grid.Row="3" Grid.Column="0" Color="Blue"/>
+                <Label  Grid.Row="3" Grid.Column="0" Text="Ingrese el Pago Mensual: " TextColor="White"  HorizontalTextAlignment="End"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtPagomensual" Keyboard="Numeric" MaxLength="4" TextChanged="txtPagomensual_TextChanged"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="supago es:" x:Name="txtTotal" TextColor="Black"  HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="4" Grid.Column="1" Text="supago est:" x:Name="lblTotalF" TextColor="Black"   HorizontalTextAlignment="Center"/>
+                
+                
+                <Button Grid.Row="5" Grid.Column="0" x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+                <Line/>
+              <!--<Label Grid.Row="4" Grid.Column="0" x:Name="txtTotal" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>-->
+                <Button Grid.Row="5" Grid.Column="1" x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+
+            </Grid>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

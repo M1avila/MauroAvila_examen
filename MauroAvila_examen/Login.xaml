@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauroAvila_examen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White" Padding="24" CornerRadius="0">
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            </Frame>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Bienvenido Sistema de Registro de Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+            <Label Text=" Iniciar sesión" FontSize="Title" Padding="30,10,30,10" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
+            <Entry x:Name="txtPasword" Placeholder="Ingrese su contraseña" IsPassword="True"/>
+
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauroAvila_examen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" x:Name="lblUser" TextColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                <BoxView Grid.Row="1" Grid.Column="0" Color="Blue"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Estimado : " TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Label Grid.Row="1" Grid.Column="1" x:Name="lblNombre" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Estimado : " TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <BoxView Grid.Row="2" Grid.Column="0" Color="Blue"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Usted debe cancelar el valor de: " TextColor="White" HorizontalTextAlignment="End"/>
+                <Label Grid.Row="2" Grid.Column="1" x:Name="lblMensual" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
